@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0%;
+        background-color: black;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        color: rgb(0, 0, 0);
+        height: 100vh;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px;
+        grid-template-areas:
+          "header header header"
+          "a1 a1 a7"
+          "a2 a2 a7"
+          "a3 a3 a7"
+          "a4  a4 a7"
+          "a5 a5 a7"
+          "a6 a6 a7"
+          "Footer Footer Footer";
+        height: 90%;
+        width: 90%;
+        gap: 10px;
+      }
+      .container > div {
+        font-size: xx-large;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-weight: bolder;
+        text-align: center;
+        border-radius: 20px;
+        align-content: center;
+      }
+
+      .header {
+        grid-area: header;
+        background-color: brown;
+      }
+      .a1 {
+        grid-area: a1;
+        background-color: aliceblue;
+      }
+      .a2 {
+        grid-area: a2;
+        background-color: aliceblue;
+      }
+      .a3 {
+        grid-area: a3;
+        background-color: aliceblue;
+      }
+      .a4 {
+        grid-area: a4;
+        background-color: aliceblue;
+      }
+      .a5 {
+        grid-area: a5;
+        background-color: aliceblue;
+      }
+      .a6 {
+        grid-area: a6;
+        background-color: aliceblue;
+      }
+      .a7 {
+        grid-area: a7;
+        background-color: aqua;
+      }
+
+      .Footer {
+        grid-area: Footer;
+        background-color: gainsboro;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Header</div>
+
+      <div class="a1">Articles1</div>
+      <div class="a2">Articles2</div>
+      <div class="a3">Articles3</div>
+      <div class="a4">Articles4</div>
+      <div class="a5">Articles5</div>
+      <div class="a6">Articles6</div>
+
+      <div class="a7">Aside</div>
+      <div class="Footer">Footer</div>
+    </div>
+  </body>
+</html>

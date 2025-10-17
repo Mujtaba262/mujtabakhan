@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My First CSS Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      background-color: rgb(175, 168, 168);
+      display: flex;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 200px;
+      background-color: #f8f3f3;
+      height: 100vh;
+      padding-top: 20px;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 12px 30px;
+      text-decoration: none;
+      color: black;
+      background-color: whitesmoke;
+      position: relative;
+      font-weight: bold;
+      border-right: 6px solid green;
+    }
+    .sidebar a:hover{
+        background-color: #d4cbcb;
+    }
+   
+    /* Main content */
+    .main-content {
+      padding: 30px;
+      flex-grow: 1;
+    }
+
+    .main-content h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .main-content p {
+      margin-top: 15px;
+      line-height: 1.6;
+    }
+
+    .date {
+      margin-top: 30px;
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <a href="#">Home page</a>
+    <a href="#">About</a>
+    <a href="#">Contact us</a>
+    <a href="#">Others</a>
+  </div>
+
+  <div class="main-content">
+    <h1>My first page styled with CSS</h1>
+    <p>Welcome to my page!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+   <hr> <div class="date">23 Feb 2021</div>
+  </div>
+
+</body>
+</html>

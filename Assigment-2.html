@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .img1{
+            position: absolute;
+            left: 500px;
+          
+        }
+        .t-1{
+            position: absolute;
+            top: 100px;
+            left: 400px;
+            width: 300px;
+              border: 2px solid blue;
+              padding-left: 20px;
+        }
+        .g2{
+            font-size: x-small;
+        }
+         .boutton-1{
+        position: relative;
+        margin-top: 10px;
+        height: 20px;
+        border-radius: 20px;
+        width: 100px;
+        text-align: center;
+        background-color: aqua;
+      }
+    </style>
+</head>
+<body>
+    <img src="296fe121-5dfa-43f4-98b5-db50019738a7.jpg" style="height: 100px; width: 100px;" class="img1">
+    <form action="#">
+        <table class="t-1">
+            <tr>
+              <td>
+           <label for="name">User Name</label>
+        <br>
+        <input type="text" placeholder="Enter your name" required>
+            </td>
+            </tr>
+              <tr>
+              <td>
+           <label for="name">Password</label>
+        <br>
+        <input type="password" placeholder="Enter password" required>
+            </td>
+            </tr>
+              <tr >
+          <td class="g2">  <input type="checkbox">Remember me
+        </td>
+        </tr>
+        <tr>
+            <td class="g2">
+                forget <a href="#">Password?</a>
+            </td>
+        </tr>
+         <tr>
+            <td>
+                <button class="boutton-1">Login</button>
+            </td>
+            <td>
+                <button class="boutton-1">Cancel</button>
+            </td>
+        </tr>
+        </table>
+    </form>
+</body>
+</html>

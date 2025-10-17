@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victoria's Journal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0 10%;
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc-wlCZPjI1d23f4eUw85DN0t-tjDVrbE79w&s");
+      background-repeat: repeat;
+      background-size: 100vh;
+    }
+
+    /* Header */
+    .header {
+      border: 5px solid blue;
+      text-align: right;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .header h1 {
+      margin: 0;
+      color: teal;
+    }
+
+    .header h2 {
+      margin: 0;
+      color: darkcyan;
+    }
+
+    /* Main container (Sidebar + Content) */
+    .container {
+      display: flex;
+      border: 5px solid black;
+      padding: 10px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      border: 5px solid teal;
+      background-color: #E8FBFB;
+      padding: 10px;
+      width: 25%;
+      height: fit-content;
+    }
+
+    .sidebar h3 {
+      margin-top: 0;
+      border-bottom: 2px solid gray;
+      text-align: center;
+    }
+
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar li {
+      margin: 5px 0;
+      text-align: center;
+    }
+
+    /* Journal content area */
+    .content {
+      width: 75%;
+      padding-left: 10px;
+    }
+
+    /* Each entry */
+    .entry {
+      border: 5px solid blue;
+      background-color: #E8FBFB;
+      padding: 10px;
+      margin-top: 10px;
+      overflow: auto; /* Fix float image issue */
+    }
+
+    .entry h4 {
+      color: teal;
+      margin: 0 0 5px 0;
+    }
+
+    .entry p {
+      margin: 5px 0;
+    }
+
+    .entry img {
+      float: right;
+      width: 100px;
+      border: 3px solid lightblue;
+      margin-left: 10px;
+    }
+
+    /* Make it responsive */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .sidebar, .content {
+        width: 100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <div class="header">
+    <h1>Victoria's Journal</h1>
+    <h2>So fresh and so clean</h2>
+  </div>
+
+  <!-- Main Container -->
+  <div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h3>Friends</h3>
+      <ul>
+        <li>190m Buddies</li>
+        <li>Big Will</li>
+        <li>Conan the Librarian</li>
+      </ul>
+    </div>
+
+    <!-- Journal Entries -->
+    <div class="content">
+
+      <div class="entry">
+        <h4>04/09/08: Spatulas</h4>
+        <p>Yesterday I went to the store and got some much-needed spatulas! (What better way to say I love myself than to buy myself a spatula?)</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJcfdIwUjVFCZoTFid4Eb_JOTV_nFt2aa1Ng&s" alt="Spatula">
+      </div>
+
+      <div class="entry">
+        <h4>04/08/08: Cookie Monster Cupcakes</h4>
+        <p>My favorite cartoon character is Cookie Monster, and my favorite dessert is cupcakes, so Cookie Monster cupcakes are the best of both worlds.</p>
+        <p>Did you know? Cookie Monster once said, “Sometimes me think what is love, and then me think love is what last cookie is for. Me give up the last cookie for you.” I wonder if the same applies for cupcakes? (If so, I don’t think I can ever love ANYONE!)</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTcm8eed-7p8MJE2PvrXfo8ADYxIXda7p0iDY-nRspuTg8YFOIxzhPnSz-3pIHGXKOOcM&usqp=CAU" alt="Cookie Monster Cupcakes">
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
